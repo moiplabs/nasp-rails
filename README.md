@@ -8,11 +8,11 @@ Na Gemfile é possível ver que a implementação apresentada usa como banco de 
 Para testar a aplicação no NASP basta configurar a URL de envio para http://meusite.com/nasp_rails
 
 Como testar:
-    1) Clone o repositório para sua máquina
-    2) Entre na pasta do nasp-rails
-    3) $ rake db:migrate
-    4) $ rails s
-    5) Vá no browser e confira em http://127.0.0.1/nasp_rails a App
+<br>    1) Clone o repositório para sua máquina
+<br>    2) Entre na pasta do nasp-rails
+<br>    3) $ rake db:migrate
+<br>    4) $ rails s
+<br>    5) Vá no browser e confira em http://127.0.0.1/nasp_rails a App
 
 Caso o teste acima funcione será preciso subir a aplicação em uma máquina com IP público, ou seja, visível para o servidor do NASP se comunicar e testar através do site do MoIP: http://labs.moip.com.br
 
