@@ -1,0 +1,35 @@
+<p><h1>Nome da sua aplicação</h1></p>
+
+<table id="table" cellspacing="0">
+  <caption>Notificações de alteração de status de pagamento</caption>
+  <tr>
+    <th>ID da transação</th>
+    <th>Valor</th>
+    <th>Status pagamento</th>
+    <th>Código do MoIP</th>
+    <th>Forma pagamento</th>
+    <th>Tipo pagamento</th>
+    <th>E-mail consumidor</th>
+  </tr>
+
+<% @nasp_rails.each do |nasp_rail| %>
+  <tr>
+    <td><%= nasp_rail.id_transacao %></td>
+    <td><%= nasp_rail.valor %></td>
+    <td><%= nasp_rail.status_pagamento %></td>
+    <td><%= nasp_rail.cod_moip %></td>
+    <td><%= nasp_rail.forma_pagamento %></td>
+    <td><%= nasp_rail.tipo_pagamento %></td>
+    <td><%= nasp_rail.email_consumidor %></td>
+    <td><%= link_to 'Mostrar', nasp_rail %></td>
+    <td><%= link_to 'Editar', edit_nasp_rail_path(nasp_rail) %></td>
+    <td><%= link_to 'Deletar', nasp_rail, :confirm => 'Tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nova notificação', new_nasp_rail_path %>
+
+<center><p><%= link_to image_tag("moip-labs.png") %></p></center>

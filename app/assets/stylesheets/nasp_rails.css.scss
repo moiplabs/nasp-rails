@@ -1,0 +1,98 @@
+html {
+    background: -moz-linear-gradient(top, #ececec, #fff 100px);
+    background: -webkit-linear-gradient(top, #ececec, #fff 100px);
+    background: linear-gradient(top, #ececec, #fff 100px);
+}
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font: 14px "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1 {
+    color: #000;
+    text-align:center;
+    font-size: 40px;
+    letter-spacing: -0.04em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: Palatino, serif;
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    font-weight: normal;
+    text-align:center;
+    font-size:10px;
+}
+
+#table {
+    width: 100%;
+    padding: 2px;
+    margin: 2px;
+}
+
+caption {
+    padding: 0 0 5px 0;
+    width: 100%;
+    font: italic 15px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+th {
+    font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #4f6b72;
+    border-right: 1px solid #C1DAD7;
+    border-bottom: 1px solid #C1DAD7;
+    border-top: 1px solid #C1DAD7;
+    border-left: 1px solid #C1DAD7;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 6px 6px 6px 12px;
+    background: #CAE8EA url(image_path("bg_header.jpg"))  no-repeat;
+}
+
+th.nobg {
+    border-top: 0;
+    border-left: 0;
+    border-right: 1px solid #C1DAD7;
+    background: none;
+}
+
+td {
+    border-top: 1px solid #C1DAD7;
+    border-left: 1px solid #C1DAD7;
+    border-right: 1px solid #C1DAD7;
+    border-bottom: 1px solid #C1DAD7;
+    background: #fff;
+    padding: 6px 6px 6px 12px;
+    color: #4f6b72;
+}
+
+td.alt {
+    background: #F5FAFA;
+    color: #797268;
+}
+
+th.spec {
+    border-left: 1px solid #C1DAD7;
+    border-top: 0;
+    background: #fff url(image_path("bullet1.gif")) no-repeat;
+    font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+th.specalt {
+    border-left: 1px solid #C1DAD7;
+    border-top: 0;
+    background: #f5fafa url(image_path("bullet2.gif")) no-repeat;
+    font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #797268;
+}

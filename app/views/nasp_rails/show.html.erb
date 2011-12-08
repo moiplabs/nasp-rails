@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>ID da transação:</b>
+  <%= @nasp_rail.id_transacao %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%= @nasp_rail.valor %>
+</p>
+
+<p>
+  <b>Status pagamento:</b>
+  <%= @nasp_rail.status_pagamento %>
+</p>
+
+<p>
+  <b>Código do MoIP:</b>
+  <%= @nasp_rail.cod_moip %>
+</p>
+
+<p>
+  <b>Forma pagamento:</b>
+  <%= @nasp_rail.forma_pagamento %>
+</p>
+
+<p>
+  <b>Tipo pagamento:</b>
+  <%= @nasp_rail.tipo_pagamento %>
+</p>
+
+<p>
+  <b>E-mail consumidor:</b>
+  <%= @nasp_rail.email_consumidor %>
+</p>
+
+
+<%= link_to 'Editar', edit_nasp_rail_path(@nasp_rail) %> |
+<%= link_to 'Voltar', nasp_rails_path %>
