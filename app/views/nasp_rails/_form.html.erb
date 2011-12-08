@@ -1,0 +1,45 @@
+<%= form_for(@nasp_rail) do |f| %>
+  <% if @nasp_rail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nasp_rail.errors.count, "error") %> prohibited this nasp_rail from being saved:</h2>
+
+      <ul>
+      <% @nasp_rail.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "ID da transação" %><br />
+    <%= f.text_field :id_transacao %>
+  </div>
+  <div class="field">
+    <%= f.label "Valor" %><br />
+    <%= f.text_field :valor %>
+  </div>
+  <div class="field">
+    <%= f.label "Status do pagamento" %><br />
+    <%= f.text_field :status_pagamento %>
+  </div>
+  <div class="field">
+    <%= f.label "Código do MoIP" %><br />
+    <%= f.text_field :cod_moip %>
+  </div>
+  <div class="field">
+    <%= f.label "Forma de pagamento" %><br />
+    <%= f.text_field :forma_pagamento %>
+  </div>
+  <div class="field">
+    <%= f.label "Tipo de pagamento" %><br />
+    <%= f.text_field :tipo_pagamento %>
+  </div>
+  <div class="field">
+    <%= f.label "E-mail do consumidor" %><br />
+    <%= f.text_field :email_consumidor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

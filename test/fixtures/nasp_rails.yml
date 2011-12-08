@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id_transacao: MyString
+  valor: 
+  status_pagamento: 
+  cod_moip: 
+  forma_pagamento: 
+  tipo_pagamento: MyString
+  email_consumidor: MyString
+
+two:
+  id_transacao: MyString
+  valor: 
+  status_pagamento: 
+  cod_moip: 
+  forma_pagamento: 
+  tipo_pagamento: MyString
+  email_consumidor: MyString
